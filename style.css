@@ -1,0 +1,336 @@
+:root{
+  --clr-accent-100: hsl(13, 100%, 96%);
+  --clr-accent-400: hsl(12, 88%, 59%) ;
+  --clr-primary-400:hsl(228, 39%, 23%) ;
+ 
+ 
+  --clr-neutral-100: hsl(233, 12%, 13%);
+  --clr-neutral-900:hsl(0, 0%, 98%);
+  --ff-primary: 'Be Vietnam Pro', sans-serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading:var(--ff-primary);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+
+}
+
+/* Remove default margin */
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body{
+  height: 100%;
+}
+
+
+/* Set core body defaults */
+body {
+  
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+  
+}
+
+/* Inherit fonts for inputs and buttons */
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    
+    
+    
+  }
+
+
+
+ body{
+  background-color: var(--clr-accent-100);
+  min-height: 100%;
+  min-width: 100vw;
+ 
+  
+}
+
+
+  
+}
+
+ .nav-container{
+ width: 100vw;
+ position: fixed;
+  z-index: 2;
+  background-color:hsl(233, 12%, 13%);
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ 
+ 
+ 
+  
+  color: var(--clr-neutral-900);
+ 
+  
+ }
+
+ #nav-main-text{
+ 
+  font-size: 30px;
+  margin-left: 7px;
+ }
+
+
+
+
+ .nav-list{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+ align-items: center;
+ margin-left: auto;
+ margin-right: 10px;
+ 
+
+ }
+
+ .nav-list li
+ {
+  
+ }
+
+ .hero{
+ 
+  display: flex;
+  
+
+position: relative;
+  justify-content: center;
+  align-items: center;
+
+ 
+  
+  
+
+ }
+.hero-image{
+  max-height: 17000px;
+  transform:scale(0.999) ;
+  animation: opning 3s ease-in-out forwards;
+  opacity: 0;
+  animation: hero-scale 50s ease-in-out forwards ;
+  box-shadow: 0px 0px 10px;
+  -webkit-transform:scale(0.999) ;
+  -moz-transform:scale(0.999) ;
+  -ms-transform:scale(0.999) ;
+  -o-transform:scale(0.999) ;
+  -webkit-animation: opning 3s ease-in-out forwards;
+}
+
+ @keyframes opning {
+
+  0%{
+   background-color: black;
+   
+   transform:translatey(10px);
+   
+}
+100%{opacity: 1;}
+ }
+@keyframes hero-scale {
+  100%{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+}
+
+
+
+
+
+ .hero-text
+ {
+
+  font-size: 200px;
+  color: var(--clr-neutral-900);
+  position: absolute;
+  top: 400px;
+
+ }
+
+.hero-sub-text{
+  font-size: 70px;
+  color: var(--clr-neutral-900);
+  position: absolute;
+  top: 650px;
+  opacity: 0;
+  animation: hero-sub-text  3s ease-in-out 2s;
+  -webkit-animation: hero-sub-text  3s ease-in-out 2s forwards;
+}
+
+@keyframes hero-sub-text {
+
+  100%{opacity: 1;}
+  
+}
+
+ .main-container-header
+ {
+  margin-top: 90px;
+  margin-bottom: 90px;
+ 
+  font-size: 40px;
+position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+
+ .main-container-header::after
+ {
+  content: "";
+  position: absolute;
+  top: 60px;
+  width: 500px;
+  height: 1rem;
+  background-color: rgb(214, 216, 216);
+  border-radius: 20px;
+  box-shadow: inset -20px -20px 1px rgba(0, 0, 0, 0.281),inset 20 3px 10px rgba(255, 255, 255, 0.26);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+
+ .main-1-container{
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  justify-content: space-around;
+  align-items: center;
+  
+ }
+ 
+.main-container-list
+{
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: right;
+  background-color:rgb(231, 133, 138);
+  border-radius: 20px;
+  box-shadow:  2px 2px 2px 3px rgba(104, 55, 57, 0.664);
+  width: 400px;
+  height: 200px;
+  list-style: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+#line-in-box
+{
+position: absolute;
+}
+
+#main-container-image{
+  
+ margin-right: 3px;
+ margin-top: 3px;
+ width: 80px;
+ height: 80px;
+ position: relative;
+ 
+
+ 
+
+}
+
+#name-container-1{
+ 
+  
+  align-self: center;
+  color: var(--clr-neutral-900) ;
+ 
+}
+
+#main-container-opnion
+{
+  transform-style: preserve-3d;
+
+  padding-left: 12px;
+  align-self: center;
+  width: fit-content;
+  color: var(--clr-neutral-900) ;
+}
+
+
+
+
+
+@media screen and (max-width:450px) {
+  .hero{
+    display: none;
+  }
+  
+}
