@@ -2,69 +2,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+          <title>كربوت</title>
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <title>Frontend Mentor | Manage landing page</title>
-   <link rel="stylesheet" href="style.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 </head>
 <div class="opning-div">
 <body>
 
- 
-  
-<nav>
- <div class="nav-container">
-  
-  <ul class="nav-list" >
-    <li><a  id="nav-button"href="#">أطلب نسختك المجانية الآن</a></li>
-    <li>الرئيسية</li>
-    <li>الأعمال</li>
-    <li>التواصل</li>
-    
-  </ul>
-  <h1 id="nav-main-text">كربوت</h1>
-</div>
-</nav>
-<div class="hero">
-  <img class="hero-image" src="img/hero.jpg" alt="">
-  <div class="hero-text">
-    <h2>كربوت</h2>
-    
+    <nav>
+       <div class="menue-log-container">
+        <div class="menue-log"></div>
+        <div class="menue-log"></div>
+        <div class="menue-log"></div>
+      </div>
+      
+        <div class="nav-container">
+         
+              <ul class="nav-list" >
+                <li><a  id="nav-button"href="#plans-boxes">أطلب نسختك المجانية الآن</a></li>
+                <li>
+                  <a href="#features">المميزات</a>
+                </li>
+                <li>
+                  <a href="#plans">الباقات</a>
+                </li>
+                <li>
+                  <a href="#costumers">العملاء</a>
+                </li>
+                </ul>
+          <h1 id="nav-main-text">كربوت</h1>
+        </div>
+        
+        
+    </nav>
+
+  <div class="hero">
+        <img class="hero-image" src="img/hero.jpg" alt="">
+        <div class="hero-text">
+            <h2>كربوت</h2>
+        </div>
+          <div class="hero-sub-text">
+              <h3>رسالة وفن</h3>
+          </div>
+          <div class="hero-sub-button-div">
+                <a  id="hero-sub-button"href="#plans-boxes">أطلب نسختك المجانية الآن</a>
+          </div>
   </div>
-  <div class="hero-sub-text">
-    <h3>رسالة وفن</h3>
-    
-  </div>
-   <div class="hero-sub-button-div">
-   <a  id="hero-sub-button"href="#">أطلب نسختك المجانية الآن</a>
-  </div>
-   </div>
   
 
 
-
-   <div class="features-container">
-
+  <h2 class="container-header" id="features">لماذا كربوت</h2>
+    <div class="features-container" id="features-container">
       <div id="feature-1">
-      <li class="feature-box">
-        <img id="features-image" src="img/speed-Vector.svg" alt="">
-        <h2 id="features-text">سرعة الإنجاز</h2>
-        <p id="features-sub-text"> مع كربوت  موافقة الطلب فورية وبضغطة زر واحدة </p>
+          <li class="feature-box">
+                <img id="features-image" src="img/speed-Vector.svg" alt="">
+                <h2 id="features-text">سرعة الإنجاز</h2>
+                <p id="features-sub-text"> مع كربوت  موافقة الطلب فورية وبضغطة زر واحدة </p>
+          </li>
+      </div>
 
-      </li>
-    </div>
-    
-
-      <div id="feature-2">
-         <li class="feature-box" id="feature-2-border" >
+    <div id="feature-2">
+      <li class="feature-box" id="feature-2-border" >
             <img id="features-image" src="img/money-Vector.svg" alt="">
             <h2 id="features-text">توفير</h2>
             <p id="features-sub-text">في كل عملية شراء عن طريق كربوت ستحصل على مبلغ تستطيع الإستفادة منه مباشرة</p>
@@ -73,100 +79,107 @@
 
     <div id="feature-3">
       <li class="feature-box">
-        <img id="features-image" src="img/hand-Vector.svg" alt="">
-        <h2 id="features-text">الشفافية</h2>
-        <p id="features-sub-text">سياستنا واضحة بدون أي رسوم إضافية أو ضريبة مخفية</p>
+          <img id="features-image" src="img/hand-Vector.svg" alt="">
+          <h2 id="features-text">الشفافية</h2>
+          <p id="features-sub-text">سياستنا واضحة بدون أي رسوم إضافية أو ضريبة مخفية</p>
       </li>
     </div>
-    </ul>
-   </div>
+    
+  </div>
 
-   <h2 class="plans-header">الباقات</h2>
-   <div class="plans-containers">
+
+  <h2 class="container-header" id="plans">الباقات</h2>
+  <div class="plans-containers">
     <li class="plan-1-container" id="plans-boxes" >
-     <h2>الأساسية</h2>
-     <ul>
-       <li>50طلب </li>
-       <li>ثلاث حسابات مستخدمين</li>
-       <li>حساب إداري واحد</li>
-     </ul>
-     <h3></h3>
-     <button>إضافة إلى السلة</button>
- 
+        <h2 class="palns-name">الأساسية</h2>
+        <ul>
+            <li> طلب ‎50</li>
+            <li>مستخدم ‎3</li>
+            <li>حساب إداري‎1</li>
+        </ul>
+      <h3>ريال‎0</h3>
+      <a href="">
+        <button  style="cursor:pointer;">إضافة إلى السلة</button>
+      </a>
+
     </li>
     <li class="plan-2-container" id="plans-boxes">
-     <h2>كربوت برو</h2>
-     <ul>
-       <li></li>
-       <li></li>
-       <li></li>
-     </ul>
-     <h3></h3>
-     <button></button>
- 
+        <h2 class="palns-name" >كربوت برو</h2>
+        <ul>
+          <li> طلب ‎500</li>
+          <li>مستخدم ‎25</li>
+          <li>حساب إداري‎2</li>
+        </ul>
+      <h3>ريال‎20</h3>
+      <a href="">
+        <button  style="cursor:pointer;">إضافة إلى السلة</button>
+      </a>
+
     </li>
     <li class="plan-3-container" id="plans-boxes">
-     <h2>كربوت بريميوم</h2>
-     <ul>
-       <li></li>
-       <li></li>
-       <li></li>
-     </ul>
-     <h3></h3>
-     <button></button>
- 
+        <h2 class="palns-name" >كربوت بريميوم</h2>
+          <ul>
+            <li> طلب ‎3000</li>
+          <li> مستخدم‎600</li>
+          <li>حسابات إدارية‎10</li>
+          </ul>
+          <h3>ريال‎250</h3>
+          <a href="">
+            <button  style="cursor:pointer;">إضافة إلى السلة</button>
+          </a>
     </li>
- 
-     
- 
- 
- 
- 
- 
-   </div>
- 
-<div class="main-container-header">
-  <h2>آراء مستخدمين كربوت</h2>
-</div>
+
+    </div>
+
+    <div class="container-header" id="testemonials"> 
+      <h2>آراء مستخدمين كربوت</h2>
+    </div>
 
   
-    <div class="main-1-container">
-    <li class="main-container-list">
-      <img id="line-in-box" src="img/victor-1.svg" alt="">
-      <img id="main-container-image" src="img/avatar-ali.png"  alt="">
-      <h2 id="name-container-1">حنان</h2>
-      <p id="main-container-opnion">استخدمت كربوت بعد نصيحة صديقة لي بتجربته والآن لم أعد أحتاج غيره </p>
-    </li>
-  <li class="main-container-list">
-    <img id="line-in-box" src="img/victor-1.svg" alt="">
-    <img id="main-container-image" src="img/avatar-anisha.png" alt="">
-    <h2 id="name-container-1">منى</h2>
-<p id="main-container-opnion">أعجبتني سرعة التعامل مع الطلبات خصوصا في أوقات الذروة</p>
-  </li>
-  <li  class="main-container-list">
-    <img id="line-in-box" src="img/victor-1.svg" alt="">
-    <img id="main-container-image" src="img/avatar-richard.png" alt="">
-    <h2 id="name-container-1">عاصم</h2>
-<p id="main-container-opnion">من الأشياء المميزة في كربوت سهولة الإستخدام وإجراءات الطلب وتنوع الباقات </p>
-  </li>
-  <li class="main-container-list">
-    <img id="line-in-box" src="img/victor-1.svg" alt="">
-    <img id="main-container-image" src="img/avatar-shanai.png" alt="">
-    <h2 id="name-container-1">خولة</h2>
-    <p id="main-container-opnion">  أصبح كربوت وجهتي الأولى لتنوع أسعاره ومنطقيتها خصوصا باقة كربوت برو</p>
-  </li>
-</div>
-</ul>
-
-<div class="container-2">
-  <div class="image-container-2">
-    <img src="im" alt="">
+    <div class="main-1-container" id="costumers">
+            <li class="main-container-list">
+                  <img id="line-in-box" src="img/victor-1.svg" alt="">
+                  <img id="main-container-image" src="img/avatar-ali.png"  alt="">
+                  <h2 id="name-container-1">حنان</h2>
+                  <p id="main-container-opnion">استخدمت كربوت بعد نصيحة صديقة لي بتجربته والآن لم أعد أحتاج غيره </p>
+            </li>
+            <li class="main-container-list">
+              <img id="line-in-box" src="img/victor-1.svg" alt="">
+              <img id="main-container-image" src="img/avatar-anisha.png" alt="">
+              <h2 id="name-container-1">منى</h2>
+              <p id="main-container-opnion">أعجبتني سرعة التعامل مع الطلبات خصوصا في أوقات الذروة</p>
+            </li>
+            <li  class="main-container-list">
+              <img id="line-in-box" src="img/victor-1.svg" alt="">
+              <img id="main-container-image" src="img/avatar-richard.png" alt="">
+              <h2 id="name-container-1">عاصم</h2>
+              <p id="main-container-opnion">من الأشياء المميزة في كربوت سهولة الإستخدام وإجراءات الطلب وتنوع الباقات </p>
+            </li>
+            <li class="main-container-list">
+              <img id="line-in-box" src="img/victor-1.svg" alt="">
+              <img id="main-container-image" src="img/avatar-shanai.png" alt="">
+              <h2 id="name-container-1">خولة</h2>
+              <p id="main-container-opnion">  أصبح كربوت وجهتي الأولى لتنوع أسعاره ومنطقيتها خصوصا باقة كربوت برو</p>
+          </li>
   </div>
-  
-  
-</div>
 
-  
+
+  <footer class="footer-container">
+    <h2>كربوت</h2>
+    <div class="footer-container__list">
+      
+
+      <ul class="footer-list" >
+        <li>الطلبات الخاصة</li>
+        <li>الدعم الفني</li>
+        <li>الشروط والأحكام</li>
+        <li>السياسات</li>
+        
+      </ul>
+
+
+    </div>
+  </footer>
 </body>
 </div>
 <script type="text/javascript" src="main.js"></script>
