@@ -38,9 +38,21 @@ main_container.addEventListener("mouseleave",(e)=>
 
 );
 
+/* this is for humburger menu */
+
 var logo = document.querySelector('.menue-log-container');
 var menu= document.querySelector('.nav-container');
+var menu_items=document.querySelector('.nav-list');
 
 logo.addEventListener('click',function(){
-    menu.classList.toggle('show-menue');
-});
+    menu.classList.toggle('show-menue');});
+
+
+    menu_items.addEventListener('click',function()
+{
+    menu.classList.replace('show-menue','hide-menue',);
+} 
+);
+
+logo.addEventListener('click',function(){
+    menu.classList.replace('hide-menue','show-menue');});

@@ -606,12 +606,11 @@ list-style: none;
 
 .menue-log{
   background-color: #dad2d2;
- 
   
   width: 30px;
   height: 3px;
-  
   z-index: 50;
+  
 }
 
 
@@ -634,7 +633,8 @@ list-style: none;
  
 }
 .nav-container{
-  height: fit-content;
+  height: 49vh;
+  box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.267);
   width: 100%;
   position:absolute;
   flex-direction: column-reverse;
@@ -663,6 +663,15 @@ list-style: none;
   -moz-transform: translateX(0px);
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
+}
+
+.hide-menue{
+  opacity: 0;
+  transform: translateX(-500px);
+  -webkit-transform: translateX(-500px);
+  -moz-transform: translateX(-500px);
+  -ms-transform: translateX(-500px);
+  -o-transform: translateX(-500px);
 }
 
 #nav-main-text{
