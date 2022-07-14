@@ -6,8 +6,8 @@ const opnion=document.querySelectorAll('#main-container-opnion');
 
 //moving animation event
 main_container.addEventListener("mousemove", (e)=> {
-let xAxis = (window.innerWidth/ 2-e.pageX)/20;
-let yAxis = (window.innerHeight/2-e.pageY)/20;
+let xAxis = (window.innerWidth/ 2-e.pageX)/35;
+let yAxis = (window.innerHeight/2-e.pageY)/500;
 list_cards[0].style.transform=`rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 list_cards[1].style.transform=`rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 list_cards[2].style.transform=`rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
